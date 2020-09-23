@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() 
+        int RecipeActivity() {
+
+        int recipeArray[10];
+        int recipeIndex = 0 ;
+        int recipeQuantities = 0;
+        int indexSearch = 0;
+        int k=0;
+
+        for (k=0; k>9; k++) {
+            scanf("%d",&recipeQuantities);
+            recipeArray[recipeIndex]= recipeQuantities;
+            recipeIndex = recipeIndex + 1;
+        }
+
+        scanf("%d", &indexSearch);
+        printf("%d",recipeArray[indexSearch]);
+
+
+    return 0;
+}
