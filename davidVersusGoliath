@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int davidVersusGoliath () {
+    int numberOfsoldiers = 0 ;
+    int enginePower = 0 ;
+    int resistence = 0 ;
+    int height = 0 ;
+    int weight = 0 ;
+    int power = 0 ;
+    int sum = 0 ;
+    int i ;
+    //how many soldiers ?
+    scanf("%d",&numberOfsoldiers);
+
+    //loop
+    for ( i = 0 ; i < numberOfsoldiers ; i++) {
+            scanf("%d%d%d%d",&height,&weight,&enginePower,&resistence);
+            power = (enginePower + resistence) * (weight - height);
+            sum = sum + power;
+    }
+    printf("%d",sum);
+return 0;
+}
